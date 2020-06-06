@@ -1,0 +1,12 @@
+html,
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.jumbotron-fluid {
+  background-color: #131313;
+  color: white;
+}
+
