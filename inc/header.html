@@ -2,11 +2,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Navigation Bar-->
-<nav class="navbar navbar-expand-lg pl-0 py-0" >
-  <!-- Logo Image -->
-  <a class="navbar-logo" href="https://chohkaifeng.github.io" style="max-width: 11%;">
+<nav class="navbar navbar-dark navbar-expand-lg pl-0 py-0" >
+    <!-- Logo Image for Mobile Devices/Tablets-->
+    <a class="navbar-logo d-lg-none d-xl-block" href="https://chohkaifeng.github.io" style="max-width: 100%;">
+      <img class="img-fluid" src="./img/Navbar/navLogo.jpg" alt="navbar-logo" />
+    </a>
+
+  <!-- Logo Image for Laptop-->
+  <a class="navbar-logo d-none d-lg-block" href="https://chohkaifeng.github.io" style="max-width: 11%;">
     <img class="img-fluid" src="./img/Navbar/navLogo.jpg" alt="navbar-logo" />
   </a>
+
+  <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"  style="color:white"></span>
+  </button>
 
   <!-- Links -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
