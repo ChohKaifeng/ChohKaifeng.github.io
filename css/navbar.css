@@ -3,10 +3,28 @@ nav {
   background-color: black;
 }
 
-.nav-link {
-  font-family: "Roboto", Arial, Tahoma, sans-serif;
+.nav-link, .nav-link:hover  {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   color: white;
+}
+
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .nav-item{
