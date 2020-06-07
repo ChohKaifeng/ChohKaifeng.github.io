@@ -78,7 +78,8 @@ function QuadraticFormulaSolver(a, b, c) {
   console.log(equation);
   $('#equation').html('');
   $('#equation').append(`<b>${equation}</b>`);
-
+  $('#equationMobile').html('');
+  $('#equationMobile').append(`<b>${equation}</b>`);
   // Checks if value of A is 0;
   // If Not 0, Proceed on to calcuate quadratic formula
   if (a === 0) {

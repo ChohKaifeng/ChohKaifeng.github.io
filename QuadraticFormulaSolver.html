@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/favicon.jpg" type="image/gif" sizes="16x16" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
-    <script type="text/javascript" src="./javascript/QuadraticFormulaSolver/QuadraticFormulaSolver.js"></script>
-    <link rel="stylesheet" href="./css/QuadraticFormulaSolver.css" />
-    <!-- <script src="../JS/template.js"></script> -->
-    <title>Codes</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header id="header"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/favicon.jpg" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
+  <script type="text/javascript" src="./javascript/QuadraticFormulaSolver/QuadraticFormulaSolver.js"></script>
+  <link rel="stylesheet" href="./css/QuadraticFormulaSolver.css" />
+  <!-- <script src="../JS/template.js"></script> -->
+  <title>Codes</title>
+</head>
 
-    <div class="jumbotron-fluid justify-content-center">
-      <div class="content">
+<body>
+  <!-- HEADER -->
+  <header id="header"></header>
+
+  <div class="jumbotron-fluid justify-content-center">
+    <div class="content">
+            <!-- Optimised for Laptops-->
+      <div class="d-none d-lg-block">
         <h1 class="text-center">QUADRATIC FORMULA SOLVER</h1>
         <h4 class="text-center">Solve your Quadratic Formula!</h4>
       </div>
-    </div>
-
-    <!-- Users Input -->
-    <div class="container-fluid">
-      <img
-        src="img/QuadraticFormulaSolver/QuadFormulaLong.jpg"
-        alt="Quadratic Formula Equation"
-        style="max-width: 65%; display: block; margin: auto;"
-      />
-      <div class="row justify-content-center">
-        <div class="col-3">
-          <label for="valueA">Value for A:</label><br />
-          <input type="text" id="valueA" name="valueA" placeholder="Value for A..." /> <br />
-          <p id="msg1"></p>
-          <br />
-        </div>
-        <div class="col-3">
-          <label for="valueB">Value for B:</label><br />
-          <input type="text" id="valueB" name="valueB" placeholder="Value for B..." /> <br />
-          <p id="msg2"></p>
-          <br />
-        </div>
-        <div class="col-3">
-          <label for="valueC">Value for C:</label><br />
-          <input type="text" id="valueC" name="valueC" placeholder="Value for C..." /> <br />
-          <p id="msg3"></p>
-          <br />
-        </div>
-      </div>
-      <div class="row justify-content-center pb-5">
-        <div class="col-9">
-          <input onclick="userInputs()" type="submit" value="Calculate" />
-        </div>
+      <!-- Optimised for Mobile Devices/Tablets-->
+      <div class="d-lg-none d-xl-none">
+        <h4 class="text-center">QUADRATIC FORMULA SOLVER</h4>
+        <h5 class="text-center">Solve your Quadratic Formula!</h5>
       </div>
     </div>
+  </div>
 
-    <!-- Answers -->
-    <div class="container-fluid">
+  <!-- Users Input -->
+  <div class="container-fluid">
+    <!-- Formula Image for Mobile Devices/Tablets-->
+    <img class="d-lg-none d-xl-none" src="img/QuadraticFormulaSolver/QuadFormulaLong.jpg"
+      alt="Quadratic Formula Equation" style="max-width: 100%;" />
+    <!-- Formula Image for Laptop-->
+    <img class=" d-none d-lg-block" src="img/QuadraticFormulaSolver/QuadFormulaLong.jpg"
+      alt="Quadratic Formula Equation" style="max-width: 65%; display: block; margin: auto;" />
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-3 mb-0">
+        <label for="valueA">Value for A:</label><br />
+        <input type="text" id="valueA" name="valueA" placeholder="Value for A..." /> <br />
+        <p class=" mb-0" id="msg1"></p>
+        <br />
+      </div>
+      <div class="col-12 col-lg-3 mb-0">
+        <label for="valueB">Value for B:</label><br />
+        <input type="text" id="valueB" name="valueB" placeholder="Value for B..." /> <br />
+        <p class=" mb-0" id="msg2"></p>
+        <br />
+      </div>
+      <div class="col-12 col-lg-3 mb-0">
+        <label for="valueC">Value for C:</label><br />
+        <input type="text" id="valueC" name="valueC" placeholder="Value for C..." /> <br />
+        <p class=" mb-0" id="msg3"></p>
+        <br />
+      </div>
+    </div>
+    <div class="row justify-content-center pb-5">
+      <div class="col-9">
+        <input onclick="userInputs()" type="submit" value="Calculate" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Answers -->
+  <div class="container-fluid">
+    <div class="d-none d-lg-block">
       <h2 class="text-center pt-5">Answer for Equation</h2>
       <h3 class="text-center text-white" id="equation"></h3>
-      <div class="row justify-content-center py-3">
-        <textarea id="answer" rows="10" cols="70" readonly></textarea>
-      </div>
     </div>
-  </body>
+    <!-- Optimised for Mobile Devices/Tablets-->
+    <div class="d-lg-none d-xl-none">
+      <h4 class="text-center pt-5">Answer for Equation</h4>
+      <h5 class="text-center text-white" id="equationMobile"></h5>
+    </div>
+    <div class="row justify-content-center py-3">
+      <textarea id="answer" rows="10" cols="70" readonly></textarea>
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
