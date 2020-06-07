@@ -26,6 +26,7 @@
       </div>
     </div>
 
+    <!-- Users Input -->
     <div class="container-fluid">
       <img
         src="img/QuadraticFormulaSolver/QuadFormulaLong.jpg"
@@ -46,10 +47,19 @@
           <input type="text" id="valueC" name="valueC" placeholder="Value for C..." /><br /><br />
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center pb-5">
         <div class="col-9">
-          <input type="submit" value="Submit" />
+          <input onclick="userInputs()" type="submit" value="Calculate" />
         </div>
+      </div>
+    </div>
+
+    <!-- Answers -->
+    <div class="container-fluid">
+      <h2 class="text-center pt-5">Answer for Equation</h2>
+      <h3 class="text-center text-white" id="equation"></h3>
+      <div class="row justify-content-center py-3">
+        <textarea id="answer" rows="10" cols="70" readonly></textarea>
       </div>
     </div>
   </body>
