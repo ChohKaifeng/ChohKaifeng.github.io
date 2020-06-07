@@ -106,6 +106,7 @@ function ScaleConverter(inputLength, inputUnit, scaleInputs, convertedUnit) {
     // Convert n such that it is both still in metres
     convertedNValue = inputInMetre * scaleInputs[1];
 
+    // Convert to End Units
     switch (convertedUnit) {
         case 'Metre':
             convertedInput = convertedNValue;
