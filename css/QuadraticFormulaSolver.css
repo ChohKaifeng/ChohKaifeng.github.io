@@ -57,10 +57,9 @@ input[type=submit] {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 input[type=submit]:hover {
