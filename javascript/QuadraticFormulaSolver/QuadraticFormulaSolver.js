@@ -4,7 +4,53 @@ function userInputs() {
   b = parseFloat(document.getElementById('valueB').value);
   c = parseFloat(document.getElementById('valueC').value);
 
-  QuadraticFormulaSolver(a, b, c);
+  // Types of Messages
+  var errMsg = 'Input is not a number!';
+  var successMsg = 'Valid Input!';
+
+  // Check if valueA is a number
+  if (isNaN(a) === true) {
+    $('#msg1').html('');
+    $('#msg1').removeClass('text-success');
+    $('#msg1').addClass('text-danger');
+    $('#msg1').append(`<b>${errMsg}</b>`);
+  } else if (isNaN(a) === false) {
+    $('#msg1').html('');
+    $('#msg1').removeClass('text-danger');
+    $('#msg1').addClass('text-success');
+    $('#msg1').append(`<b>${successMsg}</b>`);
+  }
+
+    // Check if valueB is a number
+  if (isNaN(b) === true) {
+    $('#msg2').html('');
+    $('#msg2').removeClass('text-success');
+    $('#msg2').addClass('text-danger');
+    $('#msg2').append(`<b>${errMsg}</b>`);
+  } else if (isNaN(b) === false) {
+    $('#msg2').html('');
+    $('#msg2').removeClass('text-danger');
+    $('#msg2').addClass('text-success');
+    $('#msg2').append(`<b>${successMsg}</b>`);
+  }
+
+    // Check if valueC is a number
+  if (isNaN(c) === true) {
+    $('#msg3').html('');
+    $('#msg3').removeClass('text-success');
+    $('#msg3').addClass('text-danger');
+    $('#msg3').append(`<b>${errMsg}</b>`);
+  } else if (isNaN(c) === false) {
+    $('#msg3').html('');
+    $('#msg3').removeClass('text-danger');
+    $('#msg3').addClass('text-success');
+    $('#msg3').append(`<b>${successMsg}</b>`);
+  }
+
+  // Execute only if all 3 are numbers
+  if (isNaN(a) === false && isNaN(b) === false && isNaN(c) === false) {
+    QuadraticFormulaSolver(a, b, c);
+  }
 }
 
 function QuadraticFormulaSolver(a, b, c) {
@@ -30,6 +76,7 @@ function QuadraticFormulaSolver(a, b, c) {
   //Forms the equation and appends into HTML
   equation = a + 'x' + '2'.sup() + ' + ' + b + 'x' + ' + ' + c;
   console.log(equation);
+  $('#equation').html('');
   $('#equation').append(`<b>${equation}</b>`);
 
   // Checks if value of A is 0;
