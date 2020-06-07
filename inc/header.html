@@ -1,20 +1,25 @@
 <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <!-- Navigation Bar-->
-<nav class="navbar navbar-dark navbar-expand-lg pl-0 py-0" >
-    <!-- Logo Image for Mobile Devices/Tablets-->
-    <a class="navbar-logo d-lg-none d-xl-none" href="https://chohkaifeng.github.io" style="max-width: 100%;">
-      <img class="img-fluid" src="./img/Navbar/navLogo.jpg" alt="navbar-logo" />
-    </a>
+<nav class="navbar navbar-dark navbar-expand-lg pl-0 py-0">
+  <!-- Logo Image for Mobile Devices/Tablets-->
+  <a class="navbar-logo d-lg-none d-xl-none" href="https://chohkaifeng.github.io" style="max-width: 100%;">
+    <img class="img-fluid" src="./img/Navbar/navLogo.jpg" alt="navbar-logo" />
+  </a>
 
   <!-- Logo Image for Laptop-->
   <a class="navbar-logo d-none d-lg-block" href="https://chohkaifeng.github.io" style="max-width: 11%;">
     <img class="img-fluid" src="./img/Navbar/navLogo.jpg" alt="navbar-logo" />
   </a>
 
-  <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"  style="color:white"></span>
+  <button
+    class="navbar-toggler ml-auto mb-2"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+  >
+    <span class="navbar-toggler-icon" style="color: white;"></span>
   </button>
 
   <!-- Links -->
@@ -23,15 +28,21 @@
       <li class="nav-item">
         <a class="nav-link" href="https://chohkaifeng.github.io">HOME</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link">MATHEMATICS PROGRAMMING <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a class="nav-link" href="./ScaleFinder.html">SCALE FINDER</a>
+          <a class="nav-link" href="./ScaleConverter.html">SCALE CONVERTER</a>
+          <a class="nav-link" href="./QuadraticFormulaSolver.html">QUAD. EQUATION SOLVER</a>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
         <a class="nav-link" href="./QuadraticFormulaSolver.html">QUADRATIC FORMULA SOLVER</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./ScaleConverter.html">SCALE CONVERTER</a>
-      </li>
+      <li class="nav-item"></li>
       <li class="nav-item">
         <a class="nav-link" href="./ScaleFinder.html">SCALE FINDER</a>
-      </li>
-      </ul>
+      </li> -->
+    </ul>
   </div>
 </nav>
