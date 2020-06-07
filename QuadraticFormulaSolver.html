@@ -20,30 +20,37 @@
     <header id="header"></header>
 
     <div class="jumbotron-fluid justify-content-center">
-      <div class="content py-3">
-        <h1 class="text-center">Quadratic Formula Solver</h1>
+      <div class="content">
+        <h1 class="text-center">QUADRATIC FORMULA SOLVER</h1>
         <h4 class="text-center">Solve your Quadratic Formula!</h4>
-        <img
-          class="p2-3"
-          src="img/QuadraticFormulaSolver/QuadFormula.jpg"
-          alt="Quadratic Formula Equation"
-          style="max-width: 40%; display: block; margin-left: auto; margin-right: auto;"
-        />
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="row justify-content-center mt-3">
-        <div class="card p-3">
+      <img
+        src="img/QuadraticFormulaSolver/QuadFormula.jpg"
+        alt="Quadratic Formula Equation"
+        style="max-width: 65%; display: block; margin: auto;"
+      />
+      <div class="row justify-content-center">
+        <div class="col-3">
           <label for="valueA">Value for A:</label><br />
-          <input type="text" id="valueA" name="valueA" value="Value for A..." /><br /><br />
+          <input type="text" id="valueA" name="valueA" placeholder="Value for A..." /><br /><br />
+        </div>
+        <div class="col-3">
           <label for="valueB">Value for B:</label><br />
-          <input type="text" id="valueB" name="valueB" value="Value for B..." /><br /><br />
+          <input type="text" id="valueB" name="valueB" placeholder="Value for B..." /><br /><br />
+        </div>
+        <div class="col-3">
           <label for="valueC">Value for C:</label><br />
-          <input type="text" id="valueC" name="valueC" value="Value for C..." /><br /><br />
+          <input type="text" id="valueC" name="valueC" placeholder="Value for C..." /><br /><br />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-9">
           <input type="submit" value="Submit" />
         </div>
-
+      </div>
     </div>
   </body>
 </html>
