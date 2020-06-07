@@ -13,7 +13,7 @@ function userInputs() {
 
     console.log(scaleInputs);
     // Types of Messages
-    var errMsg = 'Input is not a number!';
+    var errMsg = 'Input is not a number or in the correct format!';
     var errMsg2 = 'Please enter a positive number that is greater than 0!';
     var successMsg = 'Valid Input!';
 

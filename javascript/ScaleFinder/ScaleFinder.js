@@ -5,53 +5,7 @@ function userInputs() {
   inputLength2 = parseFloat(document.getElementById('length2').value);
   inputUnit2 = document.getElementById('inputUnit2').value;
 
-  // Types of Messages
-  var errMsg = 'Input is not a number!';
-  var errMsg2 = 'Length 2 must be smaller than Length 1';
-  var successMsg = 'Valid Input!';
-
-  // Check if inputLength is a number
-  if (isNaN(inputLength) === true) {
-    $('#msg1').html('');
-    $('#msg1').removeClass('text-success');
-    $('#msg1').addClass('text-danger');
-    $('#msg1').append(`<b>${errMsg}</b>`);
-  } else if (isNaN(inputLength) === false) {
-    $('#msg1').html('');
-    $('#msg1').removeClass('text-danger');
-    $('#msg1').addClass('text-success');
-    $('#msg1').append(`<b>${successMsg}</b>`);
-  }
-
-  // Check if inputLength2 is a number
-  if (isNaN(inputLength2) === true) {
-    $('#msg2').html('');
-    $('#msg2').removeClass('text-success');
-    $('#msg2').addClass('text-danger');
-    $('#msg2').append(`<b>${errMsg}</b>`);
-  } else if (isNaN(inputLength2) === false) {
-    // Check if scaleInputs is a postive number and is greater than 0
-    if (inputLength2 < inputLength) {
-      $('#msg2').html('');
-      $('#msg2').removeClass('text-success');
-      $('#msg2').addClass('text-danger');
-      $('#msg2').append(`<b>${errMsg2}</b>`);
-    } else {
-      $('#msg2').html('');
-      $('#msg2').removeClass('text-danger');
-      $('#msg2').addClass('text-success');
-      $('#msg2').append(`<b>${successMsg}</b>`);
-    }
-  }
-
-  // Execute only if both are numbers and inputLength2 is greater than inputLength1
-  if (isNaN(inputLength2) === false && isNaN(inputLength) === false && inputLength2 < inputLength) {
-    ScaleFinder(inputLength, inputUnit, inputLength2, inputUnit2);
-  }
-}
-
-function ScaleFinder(inputLength, inputUnit, inputLength2, inputUnit2) {
-  var inputInMetre, inputInMetre2, convertedInput;
+  var inputInMetre, inputInMetre2;
   var fromDeciPrefix = Math.pow(10, -1);
   var fromKiloPrefix = Math.pow(10, 3);
   var fromCentiPrefix = Math.pow(10, -2);
@@ -109,7 +63,45 @@ function ScaleFinder(inputLength, inputUnit, inputLength2, inputUnit2) {
       break;
   }
 
-  console.log(inputInMetre, inputInMetre2);
+  // Types of Messages
+  var errMsg = 'Input is not a number!';
+  var errMsg2 = 'Length 2 must be smaller than Length 1';
+  var successMsg = 'Valid Input!';
+
+  // Check if inputLength is a number
+  if (isNaN(inputLength) === true) {
+    $('#msg1').html('');
+    $('#msg1').removeClass('text-success');
+    $('#msg1').addClass('text-danger');
+    $('#msg1').append(`<b>${errMsg}</b>`);
+  } else if (isNaN(inputLength) === false) {
+    $('#msg1').html('');
+    $('#msg1').removeClass('text-danger');
+    $('#msg1').addClass('text-success');
+    $('#msg1').append(`<b>${successMsg}</b>`);
+  }
+
+  // Check if inputLength2 is a number
+  if (isNaN(inputInMetre) === true) {
+    $('#msg2').html('');
+    $('#msg2').removeClass('text-success');
+    $('#msg2').addClass('text-danger');
+    $('#msg2').append(`<b>${errMsg}</b>`);
+  } else if (isNaN(inputInMetre2) === false) {
+      $('#msg2').html('');
+      $('#msg2').removeClass('text-danger');
+      $('#msg2').addClass('text-success');
+      $('#msg2').append(`<b>${successMsg}</b>`);
+  }
+
+  // Execute only if both are numbers
+  if (isNaN(inputInMetre2) === false && isNaN(inputInMetre) === false) {
+    ScaleFinder(inputLength,inputLength2,inputUnit,inputUnit2,inputInMetre, inputInMetre2);
+  }
+}
+
+function ScaleFinder(inputLength,inputLength2,inputUnit,inputUnit2,inputInMetre, inputInMetre2) {
+  console.log(inputLength,inputLength2,inputInMetre, inputInMetre2);
   // Convert it such that its always 1:n, where n is the new scale
   if (inputInMetre != 1) {
     var division = inputInMetre;
