@@ -36,9 +36,18 @@ a:hover {
   border-top: 1px solid white;
 }
 
-span {
+span,
+h6 {
   padding-top: 7px;
-  color: white;
   font-size: 10px;
+}
+
+span {
+  color: white;
   float: right;
+}
+
+h6 {
+  margin: 0;
+  text-align: center;
 }

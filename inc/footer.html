@@ -1,8 +1,6 @@
 <link rel="stylesheet" type="text/css" href="./css/footer.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-
-
 <div class="jumbotron-fluid">
   <div class="mainbody text-center">
     <a href="../index.html">HOME</a>
@@ -10,7 +8,13 @@
     <a href="../index.html">MATHEMATICAL PROGRAMMING</a>
   </div>
 
-  <div class="lastrow">
+  <!-- Display only on mobile devices -->
+  <div class="lastrow d-lg-none d-xl-none">
+    <h6 class="img-fluid text-white">&#169; 2020 Choh Kaifeng. All rights reserved.</h6>
+  </div>
+
+  <!-- Display only on laptops -->
+  <div class="lastrow d-none d-lg-block">
     <img class="img-fluid" src="../img/Logos/footerLogo.png" alt="Logo" style="max-width: 11%;" />
     <span>&#169; 2020 Choh Kaifeng. All rights reserved.</span>
   </div>
