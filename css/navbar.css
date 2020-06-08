@@ -17,7 +17,7 @@ nav {
   display: block;
   height: 2px;
   left: 50%;
-  background: rgb(212,175,55)  ;
+  background: #d4af37;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
