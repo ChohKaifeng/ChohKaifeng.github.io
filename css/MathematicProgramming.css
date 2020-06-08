@@ -1,0 +1,10 @@
+.jumbotron-fluid{
+    background-color: white;
+}
+
+.jumbotron-fluid h2{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color:black;
+}
