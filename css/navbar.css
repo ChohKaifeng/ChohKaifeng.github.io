@@ -10,7 +10,8 @@ nav {
   color: #1d1d1e;
 }
 
-.nav-link:after {    
+.nav-link:after {   
+  position: relative; 
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
