@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/favicon.jpg" type="image/gif" sizes="16x16" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/HexColorChanger.css" />
+    <link rel="stylesheet" href="./css/PassTheMessage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
-    <script src="./javascript/HexColorChanger/HexColorChanger.js"></script>
-    <title>Color Changer</title>
+    <script src="./javascript/PassTheMessage/PassTheMessage.js"></script>
+    <title>Pass The Message!</title>
   </head>
 
   <body>
     <!-- HEADER -->
     <header id="header"></header>
 
-    <div class="card mx-auto">
-      <div class="card-body">
-        <!-- Optimised for Mobile -->
-        <h3 class="text-uppercase text-center d-lg-none d-xl-none">hex color :</h3>
-        <!-- Optimised for Laptop -->
-        <h1 class="text-uppercase text-center d-none d-lg-block">hex color :</h1>
-        <h3 class="hexValue text-uppercase text-center" id="hex-value"></h3>
-        <div class="button">
-          <a href="#" onclick="colorChange()" id="btn" class="btn text-uppercase my-2">Click Me!</a>
+    <div class="container">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h3 class="text-uppercase text-center">A message you would like to pass:</h3>
+          <input class="w-100 my-3 p-2" id="message" type="text" />
+          <h5 class="errMsg py-1 text-center text-danger"></h5>
+          <div class="button">
+            <a href="#" onclick="passTheMessage()" id="btn" class="btn text-uppercase my-2"><strong>Click Me!</strong></a>
+          </div>
+          <h3 class="text-uppercase text-center mt-3">Last Message Passed</h3>
+          <h4 class="message text-uppercase text-center mt-4" id='newMessage'>Hello World!</h4>
         </div>
       </div>
     </div>

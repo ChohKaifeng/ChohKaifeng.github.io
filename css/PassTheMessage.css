@@ -1,3 +1,7 @@
+body{
+    background-color: #95b8d1;
+}
+
 .max-height {
   min-height: 70vh;
 }
@@ -5,8 +9,16 @@
 .card {
   margin-top: 205px;
   margin-bottom: 205px;
-  max-width: 50%;
+  max-width: 75%;
   background-color: white;
+}
+
+input{
+    border-radius: 3px;
+}
+
+input[type="text"]{
+    font-size:22px;
 }
 
 /* Button */
@@ -15,20 +27,27 @@
   align-items: center;
   justify-content: center;
 }
+
 a.btn {
   text-decoration: none;
-  background: #d4af37;
+  background: #95b8d1;
   color: rgb(255, 250, 250);
   padding: 10px 20px;
-  border: 1px solid #d4af37;
+  border: 1px solid #95b8d1;
   border-radius: 25px;
 }
 
 a.btn:hover {
   text-decoration: none;
   background: rgb(255, 250, 250);
-  color: #d4af37;
+  color: #95b8d1;
   padding: 10px 20px;
-  border: 1px solid #d4af37;
+  border: 1px solid #95b8d1;
   border-radius: 25px;
+}
+
+
+/* Message */
+h4.message{
+    color: #95b8d1;
 }
