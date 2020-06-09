@@ -1,0 +1,32 @@
+  .max-height {
+    min-height: 70vh;
+  }
+
+  .card {
+    margin: 250px 450px;
+    background-color: white;
+  }
+
+  /* Button */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a.btn {
+    text-decoration: none;
+    background: #d4af37;
+    color: rgb(255,250,250);
+    padding: 10px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+  }
+  
+  a.btn:hover {
+    text-decoration: none;
+    background: rgb(255,250,250);
+    color: #d4af37;
+    padding: 10px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+  }
