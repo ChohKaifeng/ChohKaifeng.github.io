@@ -2,17 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5{
-  font-family: 'Poppins', Arial, serif;
-  font-weight: bold;
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Chivo', sans-serif;
 }
 
-h2,h3,h4,h5{
-  color:white;
-}
-
-body{
-  font-family: 'Helvetica', Arial, sans-serif;
+.container-fluid.answers, .container-fluid.input, label {
+  color: white;
   font-weight: bold;
 }
 
@@ -28,10 +28,6 @@ padding-bottom:100px;
 
 .card,.container-fluid{
   background-color: #131313;
-}
-
-label{
-  color:white
 }
 
 input{
