@@ -11,17 +11,23 @@ h5 {
   font-family: 'Chivo', sans-serif;
 }
 
-.container-fluid.answers, .container-fluid.input, label {
+.container-fluid.answers,
+.container-fluid.input,
+label {
   color: white;
   font-weight: bold;
 }
 
-
-.jumbotron-fluid {
-  background-image: url(../img/QuadraticFormulaSolver/background.png);
-  color: white;
+.jumbotron-fluid.pageheader {
+  background-color: white;
 }
 
+.jumbotron-fluid.pageheader h1,
+.jumbotron-fluid.pageheader h4,
+.jumbotron-fluid.pageheader h6 {
+  color: black;
+  font-weight: bold;
+}
 .jumbotron-fluid .content {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -31,7 +37,6 @@ h5 {
 .container-fluid {
   background-color: #131313;
 }
-
 
 input,
 select {

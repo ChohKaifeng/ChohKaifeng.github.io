@@ -16,14 +16,20 @@ h5 {
   font-weight: bold;
 }
 
-.jumbotron-fluid {
-  background-image: url(../img/QuadraticFormulaSolver/background.png);
-  color: white;
+
+.jumbotron-fluid.pageheader {
+  background-color: white;
 }
 
-.jumbotron-fluid .content{
-padding-top:100px;
-padding-bottom:100px;
+.jumbotron-fluid.pageheader h1,
+.jumbotron-fluid.pageheader h4,
+.jumbotron-fluid.pageheader h6 {
+  color: black;
+  font-weight: bold;
+}
+.jumbotron-fluid .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .card,.container-fluid{

@@ -144,6 +144,6 @@ function ScaleConverter(inputLength, inputUnit, scaleInputs, convertedUnit) {
         '\n' +
         `Converted Input: ${convertedInput}` + ` ${convertedUnit}` +
         '\n' +
-        `Converted Input (3SF): ${convertedInputSF}`
+        `Converted Input (3SF): ${convertedInputSF}` + ` ${convertedUnit}`
     );
 }
