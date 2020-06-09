@@ -8,8 +8,8 @@ function colorChange() {
     hexHashtag += hexValues[value];
   }
   //   Empty h3 content before pushing it in
-  $('h3').empty();
-  $('h3').append(hexHashtag);
+  $('h3.hexValue').empty();
+  $('h3.hexValue').append(hexHashtag);
   //   Add CSS Property to body
   $('body').css('background-color', hexHashtag);
 }

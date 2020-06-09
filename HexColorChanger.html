@@ -17,15 +17,20 @@
   <body>
     <!-- HEADER -->
     <header id="header"></header>
-    <div class="card">
+
+    <div class="card mx-auto">
       <div class="card-body">
-        <h1 class="text-uppercase text-center">hex color :</h1>
-        <h3 class="text-uppercase text-center" id="hex-value"></h3>
+        <!-- Optimised for Mobile -->
+        <h3 class="text-uppercase text-center d-lg-none d-xl-none">hex color :</h3>
+        <!-- Optimised for Laptop -->
+        <h1 class="text-uppercase text-center d-none d-lg-block">hex color :</h1>
+        <h3 class="hexValue text-uppercase text-center" id="hex-value"></h3>
         <div class="button">
           <a onclick="colorChange()" id="btn" class="btn btn-secondary text-uppercase my-2">Click Me!</a>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer id="footer"></footer>
   </body>
