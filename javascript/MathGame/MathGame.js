@@ -37,7 +37,7 @@ function getDifficulty() {
 }
 
 function MathGame(difficulty) {
-  var number1, number2, question;
+  var number1, number2, question, questionStmt;
   // Possible Operators & choosing of operators
   const operators = ['+', '-', '/', '*'];
   var operatorArrayNo = parseInt(Math.random() * operators.length);
@@ -84,11 +84,18 @@ function MathGame(difficulty) {
     (operatorChosen === '/' && number1 % number2 != 0)
   );
 
-  //   Forms the question and append it into html
-  question = number1.toString() + operatorChosen + number2.toString();
-  $('h3.question').append(question);
+  //   Forms the question statement and append it into html
+  if (operatorChosen === '+' || operatorChosen === '-') {
+    questionStmt = number1.toString() + " " + operatorChosen + " " + number2.toString();
+  } else if (operatorChosen === "*") {
+    questionStmt = number1.toString() + " x " + number2.toString();
+  } else if (operatorChosen === "/"){
+    questionStmt = number1.toString() + " ÷ " + number2.toString();
+  }
 
-  //   Evaluate answer
+  $('h3.question').append(questionStmt);
+  //   Form question string and evaluate answer
+  question = number1.toString() + operatorChosen + number2.toString();
   answer = eval(question);
 }
 
