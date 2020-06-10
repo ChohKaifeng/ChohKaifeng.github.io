@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/MathGame.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
+    <script src="./javascript/MathGame/MathGame.js"></script>
+    <title>Math Game</title>
+  </head>
+
+  <body onload="getDifficulty()">
+    <!-- HEADER -->
+    <header id="header"></header>
+
+    <div class="container">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h3 class="text-uppercase text-center">Calculate this equation:</h3>
+          <h3 class="question text-uppercase text-center mt-3" id="equation"></h3>
+          <input class="w-100 mt-3 p-2" id="userAnswer" type="number" />
+          <h4 class="msg py-1 my-2 text-center"></h4>
+          <div class="button">
+            <a href="#" onclick="checkAnswer()" id="btn" class="btn text-uppercase my-2"
+              ><strong>Click Me!</strong></a
+            >
+          </div>
+          <!-- <h3 class="text-uppercase text-center mt-3">Last Message Passed</h3> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+  </body>
+</html>

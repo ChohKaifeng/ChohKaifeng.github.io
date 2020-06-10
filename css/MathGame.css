@@ -1,0 +1,49 @@
+.max-height {
+  min-height: 70vh;
+}
+
+.card {
+  margin-top: 205px;
+  margin-bottom: 205px;
+  max-width: 75%;
+  background-color: white;
+}
+
+input{
+    border-radius: 3px;
+}
+
+input[type="text"]{
+    font-size:22px;
+}
+
+/* Button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.btn {
+  text-decoration: none;
+  background: #72243c;
+  color: rgb(255, 250, 250);
+  padding: 10px 20px;
+  border: 1px solid #72243c;
+  border-radius: 25px;
+}
+
+a.btn:hover {
+  text-decoration: none;
+  background: rgb(255, 250, 250);
+  color: #72243c;
+  padding: 10px 20px;
+  border: 1px solid #72243c;
+  border-radius: 25px;
+}
+
+
+/* question */
+h4.question{
+    color: black;
+}
