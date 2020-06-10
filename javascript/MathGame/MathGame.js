@@ -86,11 +86,11 @@ function MathGame(difficulty) {
 
   //   Forms the question statement and append it into html
   if (operatorChosen === '+' || operatorChosen === '-') {
-    questionStmt = number1.toString() + " " + operatorChosen + " " + number2.toString();
-  } else if (operatorChosen === "*") {
-    questionStmt = number1.toString() + " x " + number2.toString();
-  } else if (operatorChosen === "/"){
-    questionStmt = number1.toString() + " ÷ " + number2.toString();
+    questionStmt = number1.toString() + ' ' + operatorChosen + ' ' + number2.toString();
+  } else if (operatorChosen === '*') {
+    questionStmt = number1.toString() + ' x ' + number2.toString();
+  } else if (operatorChosen === '/') {
+    questionStmt = number1.toString() + ' ÷ ' + number2.toString();
   }
 
   $('h3.question').append(questionStmt);
@@ -101,8 +101,8 @@ function MathGame(difficulty) {
 
 // When ans is clicked, check answer
 function checkAnswer() {
-  var correctSound = document.getElementById("correct");
-  var wrongSound = document.getElementById("wrong")
+  var correctSound = document.getElementById('correct');
+  var wrongSound = document.getElementById('wrong');
   var userInput = parseInt($('#userAnswer').val());
   var successMsg = 'Correct Answer!';
   var wrongMsg = 'Wrong Answer! Try Again!';

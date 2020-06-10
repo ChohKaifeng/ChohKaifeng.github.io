@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/Counter.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
+    <script src="./javascript/Counter/Counter.js"></script>
+    <title>Color Changer</title>
+  </head>
+
+  <body onload="textColorChanger()">
+    <!-- HEADER -->
+    <header id="header"></header>
+
+    <div class="card mx-auto">
+      <div class="card-body">
+        <!-- Optimised for Mobile -->
+        <h4 class="text-uppercase text-center d-lg-none d-xl-none">COUNTER: </h4>
+        <!-- Optimised for Laptop -->
+        <h2 class="text-uppercase text-center d-none d-lg-block">COUNTER: </h2>
+        <h1 class="counter text-uppercase text-center" id="counter">0</h1>
+        <div class="button">
+          <a href="#" onclick="addCounter()" id="btn" class="btn text-uppercase my-2">Add Count</a>
+        </div>
+        <div class="button">
+          <a href="#" onclick="minusCounter()" id="btn" class="btn text-uppercase my-2">Deduct Count</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+  </body>
+</html>
