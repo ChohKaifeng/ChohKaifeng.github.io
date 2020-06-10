@@ -94,6 +94,8 @@ function MathGame(difficulty) {
 
 // When ans is clicked, check answer
 function checkAnswer() {
+  var correctSound = document.getElementById("correct");
+  var wrongSound = document.getElementById("wrong")
   var userInput = parseInt($('#userAnswer').val());
   var successMsg = 'Correct Answer!';
   var wrongMsg = 'Wrong Answer! Try Again!';
@@ -108,8 +110,10 @@ function checkAnswer() {
     // Execute function again to obtain new equation
     $('h4.msg').removeClass('text-danger');
     $('h4.msg').append(successMsg).addClass('text-success');
+    correctSound.play();
     MathGame(difficulty);
   } else if (userInput != answer) {
+    wrongSound.play();
     //  Remove old message and its color, and add new wrongMsg that is red
     $('h4.msg').empty();
     $('h4.msg').removeClass('text-success');

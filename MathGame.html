@@ -18,6 +18,15 @@
     <!-- HEADER -->
     <header id="header"></header>
 
+    <audio id="correct">
+      <source src="./img/MathGame/Correct.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="wrong">
+      <source src="./img/MathGame/Wrong.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
       <div class="card mx-auto">
         <div class="card-body">
@@ -26,9 +35,7 @@
           <input class="w-100 mt-3 p-2" id="userAnswer" type="number" />
           <h4 class="msg py-1 my-2 text-center"></h4>
           <div class="button">
-            <a href="#" onclick="checkAnswer()" id="btn" class="btn text-uppercase my-2"
-              ><strong>Click Me!</strong></a
-            >
+            <a href="#" onclick="checkAnswer()" id="btn" class="btn text-uppercase my-2"><strong>Click Me!</strong></a>
           </div>
           <!-- <h3 class="text-uppercase text-center mt-3">Last Message Passed</h3> -->
         </div>
