@@ -41,10 +41,31 @@ html {
 
 .time-display {
   position: absolute;
-  bottom: 10%;
+  bottom: 13%;
   color: white;
   font-size: 50px;
 }
+
+.nav-link {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: #77DD77;
+    padding: 10px 20px;
+    border: 1px solid #77DD77;
+    border-radius: 5px;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
 
 video {
   position: fixed;
