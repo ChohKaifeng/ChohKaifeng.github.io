@@ -1,11 +1,87 @@
+<!-- CREDITS TO: Dev Ed  -->
+<!-- VIDEO REFERRED: Build A Meditation App With Javascript HTML & CSS! -->
+<!-- LINK: https://www.youtube.com/watch?v=oMBXdZzYqEk -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/MeditationApp.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Meditation App</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- Default video -->
+      <div class="vid-container">
+        <video loop>
+          <source src="assets/MeditationApp/videos/rain.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Stores all the different times to choose from -->
+      <div class="time-select">
+        <button data-time="300">5 Minutes</button>
+        <button data-time="900">15 Minutes</button>
+        <button data-time="1800">30 Minutes</button>
+        <button data-time="2700">45 Minutes</button>
+        <button data-time="3600">60 Minutes</button>
+      </div>
+
+      <!-- Stores the default song, svg from play, timer -->
+      <div class="player-container">
+        <audio class="song">
+          <source src="assets/MeditationApp/sounds/rain.mp3" />
+        </audio>
+        <img src="assets/MeditationApp/svg/play.svg" alt="play" class="play" />
+        <svg
+          class="track-outline"
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+        </svg>
+        <svg
+          class="moving-outline"
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+        </svg>
+        <h3 class="time-display">0:00</h3>
+      </div>
+
+      <!-- Let users chooses the song -->
+      <div class="sound-picker">
+        <button data-sound="assets/MeditationApp/sounds/rain.mp3" data-video="assets/MeditationApp/videos/rain.mp4">
+          <img src="/assets/MeditationApp/svg/rain.svg" alt="rain" />
+        </button>
+        <button data-sound="assets/MeditationApp/sounds/beach.mp3" data-video="assets/MeditationApp/videos/beach.mp4">
+          <img src="/assets/MeditationApp/svg/beach.svg" alt="beach" />
+        </button>
+        <button data-sound="assets/MeditationApp/sounds/night.mp3" data-video="assets/MeditationApp/videos/night.mp4">
+          <img src="/assets/MeditationApp/svg/night.svg" alt="night" />
+        </button>
+        <button data-sound="assets/MeditationApp/sounds/library.mp3" data-video="assets/MeditationApp/videos/library.mp4">
+          <img src="/assets/MeditationApp/svg/library.svg" alt="library" />
+        </button>
+        <button data-sound="assets/MeditationApp/sounds/coffeeshop.mp3" data-video="assets/MeditationApp/videos/coffeeshop.mp4">
+          <img src="/assets/MeditationApp/svg/coffee.svg" alt="coffeeshop" />
+        </button>
+      </div>
+    </div>
+    <script src="./javascript/MeditationApp/MeditationApp.js"></script>
+  </body>
 </html>
