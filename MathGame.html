@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/favicon.jpg" type="image/gif" sizes="16x16" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/MathGame.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
-    <script src="./javascript/MathGame/MathGame.js"></script>
-    <title>Math Game</title>
-  </head>
 
-  <body onload="getDifficulty()">
-    <!-- HEADER -->
-    <header id="header"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/favicon.jpg" type="image/gif" sizes="16x16" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/MathGame.css" />
+  <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
+  <script src="./javascript/MathGame/MathGame.js"></script>
+  <title>Math Game</title>
+</head>
 
-    <audio id="correct">
-      <source src="./assets/MathGame/Correct.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <audio id="wrong">
-      <source src="./assets/MathGame/Wrong.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+<body onload="getDifficulty()">
+  <!-- HEADER -->
+  <header id="header"></header>
 
-    <div class="container">
-      <div class="card mx-auto">
-        <div class="card-body">
-          <h3 class="text-uppercase text-center">Calculate this equation:</h3>
-          <h3 class="question text-uppercase text-center mt-3" id="equation"></h3>
-          <input class="w-100 mt-3 p-2" id="userAnswer" type="number" />
-          <h4 class="msg py-1 my-2 text-center"></h4>
-          <div class="button">
-            <a href="#" onclick="checkAnswer()" id="btn" class="btn text-uppercase my-2"><strong>Click Me!</strong></a>
-          </div>
-          <!-- <h3 class="text-uppercase text-center mt-3">Last Message Passed</h3> -->
+  <audio id="correct">
+    <source src="./assets/MathGame/Correct.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="wrong">
+    <source src="./assets/MathGame/Wrong.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <div class="card mx-auto">
+      <div class="card-body">
+        <h3 class="text-uppercase text-center">Calculate this equation:</h3>
+        <h3 class="question text-uppercase text-center mt-3" id="equation"></h3>
+        <input class="w-100 mt-3 p-2" id="userAnswer" type="number" />
+        <h4 class="msg py-1 my-2 text-center"></h4>
+        <div class="button">
+          <a href="#" onclick="checkAnswer()" id="btn" class="btn text-uppercase my-2"><strong>Click Me!</strong></a>
         </div>
+        <!-- <h3 class="text-uppercase text-center mt-3">Last Message Passed</h3> -->
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer id="footer"></footer>
-  </body>
+  <!-- Footer -->
+  <footer id="footer"></footer>
+</body>
+
 </html>
