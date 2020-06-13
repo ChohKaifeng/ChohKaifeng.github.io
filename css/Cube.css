@@ -1,0 +1,136 @@
+.container-fluid {
+  height: 130vh;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+/* CSS FOR CUBES */
+.cube.scene {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+
+.cubeFace {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  opacity: 0.45;
+}
+
+.cube .faceFront {
+  background-color: red;
+  transform: translateZ(100px);
+}
+
+.cube .faceBack {
+  background-color: green;
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube .faceRight {
+  background-color: yellow;
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .faceLeft {
+  background-color: cyan;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .faceTop {
+  background-color: blue;
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube .faceBottom {
+  background-color: blueviolet;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+/* CSS FOR RECTANGLE */
+
+.rectangle.scene {
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 320px;
+  height: 160px;
+  perspective: 600px;
+}
+
+.rectangleFace {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  opacity: 0.45;
+}
+
+.rectangleFace.faceLeft,
+.rectangleFace.faceRight {
+  width: 150px;
+  height: 150px;
+}
+
+.rectangleFace.faceTop,
+.rectangleFace.faceBottom,
+.rectangleFace.faceFront,
+.rectangleFace.faceBack {
+  width: 300px;
+  height: 150px;
+}
+
+.rectangleFace.faceFront {
+  background-color: red;
+  transform: translateZ(75px);
+}
+
+.rectangleFace.faceBack {
+  background-color: green;
+  transform: rotateY(180deg) translateZ(75px);
+}
+
+.rectangleFace.faceRight {
+  background-color: yellow;
+  transform: rotateY(90deg) translateZ(225px);
+}
+
+.rectangleFace.faceLeft {
+  background-color: cyan;
+  transform: rotateY(-90deg) translateZ(75px);
+}
+
+.rectangleFace.faceTop {
+  background-color: blue;
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+.rectangleFace.faceBottom {
+  background-color: blueviolet;
+  transform: rotateX(-90deg) translateZ(75px);
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
