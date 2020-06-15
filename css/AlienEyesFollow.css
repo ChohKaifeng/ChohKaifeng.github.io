@@ -5,12 +5,20 @@
     cursor: url(../assets/AlienEyesFollow/AlienEyesFollow.png),auto;
 }
 
+h2{
+    font-family: 'Sriracha', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size:40px;
+    padding-top: 100px;
+}
+
 .alien {
   width: 4em;
   height: 5.2em;
   position: relative;
   margin: 0 auto;
-  top: 250px;
+  top: 150px;
   display: block;
   background-color: #7cb342;
   border-top-left-radius: 50%;
