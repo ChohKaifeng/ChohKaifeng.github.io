@@ -1,5 +1,4 @@
 document.querySelector('body').addEventListener('mousemove', eyeMovement);
-document.querySelector('body').addEventListener('touchmove', eyeMovement);
 
 function eyeMovement() {
   var eye = document.querySelector('.eye');
