@@ -1,0 +1,96 @@
+/* HTML Scroll effect */
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    color: rgb(248, 237, 237);
+    border-radius:10px;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: lightpink;
+    border-radius: 10px;
+  }
+
+/* Navigation Bar & Footer */
+nav,footer {
+  background-color: #FFC2C7;
+  font-family: 'Sriracha', sans-serif;
+  font-size: 18px;
+}
+
+nav a, nav a:hover {
+  color: #1a1110;
+  position: relative;
+}
+
+nav li a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover:after {
+  visibility: visible;
+  width: 100%;
+}
+
+nav > a {
+    font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+/* All containers */
+.container-fluid{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+}
+
+.container-fluid h1{
+    font-size: 46px;
+}
+
+.container-fluid h3{
+    font-size: 40px;
+}
+
+.container-fluid h5{
+    font-size: 26px;
+}
+/* Welcome Container */
+.container-fluid.welcome{
+    background-color:#FFC2C7;
+}
+
+/* Pricing Container */
+.container-fluid.colours{
+    background-color: #EED6D3
+
+}
+
+/* Functions Container */
+.container-fluid.features{
+    background-color: #FBE5C8;
+
+}
+
+/* Prices Container */
+.container-fluid.prices{
+    background-color: #B6E5D8;
+}
