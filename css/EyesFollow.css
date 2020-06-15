@@ -8,7 +8,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #251801;
-    cursor: url('/assets/EyesFollow/cursor.png');
     cursor:url(/assets/EyesFollow/cursor.png),auto;
 
 }

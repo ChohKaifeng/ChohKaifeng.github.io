@@ -1,0 +1,148 @@
+.container-fluid{
+    height:100vh;
+    width: 100%;
+    background-color: #80cee1;
+    cursor: url(../assets/AlienEyesFollow/AlienEyesFollow.png),auto;
+}
+
+.alien {
+  width: 4em;
+  height: 5.2em;
+  position: relative;
+  margin: 0 auto;
+  top: 250px;
+  display: block;
+  background-color: #7cb342;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.leftEar,
+.rightEar {
+  background-color: #7cb342;
+  width: 6.5px;
+  height: 30px;
+  top: -16px;
+  position: absolute;
+}
+
+.leftEar {
+  left: 17px;
+  transform: rotateZ(-10deg);
+}
+.rightEar {
+  right: 17px;
+  transform: rotateZ(10deg);
+}
+
+.leftEar::before {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #7cb342;
+  z-index: 1;
+  top: -7px;
+  left: -3px;
+  box-shadow: inset -0.1em -0.08em rgba(0, 0, 0, 0.1);
+}
+
+.rightEar::before {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #7cb342;
+  z-index: 1;
+  top: -7px;
+  left: -3px;
+  box-shadow: inset -0.1em -0.08em rgba(0, 0, 0, 0.1);
+}
+
+.eye {
+  position: absolute;
+  display: inline-block;
+  top: 9.5px;
+  left: 18.5%;
+  background-color: white;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 50%;
+}
+
+.eyeball {
+  position: absolute;
+  display: inline-block;
+  top: 18px;
+  left: 18.5%;
+  background-color: black;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+}
+
+.eyeball::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  left: 38%;
+  background-color: white;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    /* font-size: 0.3em;
+    width: 6.5em;
+    height: 3.5em; */
+    width: 1.4em;
+    height: 0.8em;
+    left: 50%;
+    bottom: 0.4em;
+    transform: translateX(-50%);
+    border-radius: 1.4em 1.4em 2.4em 2.4em;
+  }
+  
+  .mouth::before {
+    content: '';
+    display: block;
+    background: #ff8800;
+    width: 100%;
+    height: 0.3em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 100%;
+  }
+  
+  .tooth::before,
+  .tooth::after,
+  .tooth {
+      content: '';
+    display: block;
+    width: 0.35em;
+    height: 0.35em;
+    border-left: 0.13em solid transparent;
+    border-right: 0.13em solid transparent;
+    border-top: 0.3em solid #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooth:before {
+    content: '';
+    transform: translateX(-150%) translateY(-100%);
+  }
+  
+  .tooth:after {
+    content: '';
+    transform: translateX(50%) translateY(-100%);
+  }
