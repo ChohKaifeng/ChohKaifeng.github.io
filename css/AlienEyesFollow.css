@@ -23,6 +23,7 @@ h2{
   background-color: #7cb342;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  border: rgba(0, 0, 0, 0.1);
 }
 
 .leftEar,
@@ -32,6 +33,7 @@ h2{
   height: 30px;
   top: -16px;
   position: absolute;
+  border: rgba(0, 0, 0, 0.1);
 }
 
 .leftEar {
