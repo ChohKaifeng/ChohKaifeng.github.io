@@ -11,33 +11,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
     integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
   <link rel="stylesheet" href="./css/ScaleConverter.css" />
-  <!-- <script src="../JS/template.js"></script> -->
   <title>Scale Converter</title>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header id="header"></header>
-
-  <div class="jumbotron-fluid pageheader justify-content-center">
-    <div class="content">
-      <!-- Optimised for Laptops-->
-      <div class="d-none d-lg-block">
-        <h1 class="text-center">SCALE CONVERTER</h1>
-        <h4 class="text-center">Find the Scale that you need!</h4>
-      </div>
-      <!-- Optimised for Mobile Devices/Tablets-->
-      <div class="d-lg-none d-xl-none">
-        <h4 class="text-center">SCALE CONVERTER</h4>
-        <h5 class="text-center">Find the Scale that you need!</h5>
-      </div>
-    </div>
-  </div>
-
-  <!-- Users Input -->
-  <div class="container-fluid input pt-4">
+ <!-- Users Input -->
+  <div class="container-fluid input py-5">
     <div class="row justify-content-center pt-2">
       <div class="col-12 col-lg-3 mb-0">
         <label for="length">Length: </label><br />
@@ -79,7 +59,7 @@
         <br />
       </div>
     </div>
-    <div class="row justify-content-center pb-5">
+    <div class="row justify-content-center pb-5 m-0">
       <div class="col-10">
         <input onclick="userInputs()" type="submit" value="CONVERT" />
       </div>
@@ -87,7 +67,7 @@
   </div>
 
   <!-- Answers -->
-  <div class="container-fluid answers">
+  <div class="container-fluid answers pb-1">
     <div class="d-none d-lg-block">
       <h2 class="text-center pt-5">Answer for Conversion</h2>
     </div>
@@ -99,9 +79,6 @@
       <textarea id="answer" rows="10" cols="70" readonly></textarea>
     </div>
   </div>
-  </div>
-  <!-- Footer -->
-  <footer id="footer"></footer>
   <script type="text/javascript" src="./javascript/ScaleConverter/ScaleConverter.js"></script>
 </body>
 

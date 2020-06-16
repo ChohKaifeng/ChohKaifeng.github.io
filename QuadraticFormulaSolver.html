@@ -11,56 +11,37 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
     integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./javascript/Website/headerFooter.js"></script>
   <link rel="stylesheet" href="./css/QuadraticFormulaSolver.css" />
   <title>Quadratic Formula Solver</title>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header id="header"></header>
-
-  <div class="jumbotron-fluid pageheader justify-content-center">
-    <div class="content">
-      <!-- Optimised for Laptops-->
-      <div class="d-none d-lg-block">
-        <h1 class="text-center">QUADRATIC FORMULA SOLVER</h1>
-        <h4 class="text-center">Solve your Quadratic Formula!</h4>
-      </div>
-      <!-- Optimised for Mobile Devices/Tablets-->
-      <div class="d-lg-none d-xl-none">
-        <h4 class="text-center">QUADRATIC FORMULA SOLVER</h4>
-        <h5 class="text-center">Solve your Quadratic Formula!</h5>
-      </div>
-    </div>
-  </div>
-
   <!-- Users Input -->
   <div class="container-fluid input">
     <!-- Formula Image for Mobile Devices/Tablets-->
     <img class="d-lg-none d-xl-none" src="assets/QuadraticFormulaSolver/QuadFormulaLong.jpg"
       alt="Quadratic Formula Equation" style="max-width: 100%;" />
     <!-- Formula Image for Laptop-->
-    <img class=" d-none d-lg-block" src="assets/QuadraticFormulaSolver/QuadFormulaLong.jpg"
+    <img class="d-none d-lg-block" src="assets/QuadraticFormulaSolver/QuadFormulaLong.jpg"
       alt="Quadratic Formula Equation" style="max-width: 65%; display: block; margin: auto;" />
 
     <div class="row justify-content-center">
       <div class="col-12 col-lg-3 mb-0">
         <label for="valueA">Value for A:</label><br />
         <input type="text" id="valueA" name="valueA" placeholder="Value for A..." /> <br />
-        <p class=" mb-0" id="msg1"></p>
+        <p class="mb-0" id="msg1"></p>
         <br />
       </div>
       <div class="col-12 col-lg-3 mb-0">
         <label for="valueB">Value for B:</label><br />
         <input type="text" id="valueB" name="valueB" placeholder="Value for B..." /> <br />
-        <p class=" mb-0" id="msg2"></p>
+        <p class="mb-0" id="msg2"></p>
         <br />
       </div>
       <div class="col-12 col-lg-3 mb-0">
         <label for="valueC">Value for C:</label><br />
         <input type="text" id="valueC" name="valueC" placeholder="Value for C..." /> <br />
-        <p class=" mb-0" id="msg3"></p>
+        <p class="mb-0" id="msg3"></p>
         <br />
       </div>
     </div>
@@ -86,9 +67,6 @@
       <textarea id="answer" rows="10" cols="70" readonly></textarea>
     </div>
   </div>
-  </div>
-  <!-- Footer -->
-  <footer id="footer"></footer>
   <script type="text/javascript" src="./javascript/QuadraticFormulaSolver/QuadraticFormulaSolver.js"></script>
 </body>
 

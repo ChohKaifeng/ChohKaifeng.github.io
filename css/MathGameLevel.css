@@ -1,5 +1,8 @@
-.container-fluid {
-    background-color: RGB(230, 231, 232);
+.body{
+  background-color: RGB(230, 231, 232);
+}
+
+.container-fluid { 
     padding: 30px 62px;
   }
   
