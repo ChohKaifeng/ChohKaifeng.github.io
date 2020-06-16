@@ -1,0 +1,81 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/* All containers */
+.container-fluid{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+}
+
+.container-fluid h1{
+  font-size: 46px;
+}
+
+.container-fluid h3{
+  font-size: 40px;
+}
+
+.container-fluid h5{
+  font-size: 26px;
+}
+
+.container-fluid h6{
+  font-size: 22px;
+}
+
+.container-fluid p{
+  font-family: 'Nunito', sans-serif;;
+  font-weight: 300;
+}
+.container-fluid a{
+  font-family: 'Nunito', sans-serif;;
+  font-weight: bold;
+}
+
+/* Header Container */
+.container-fluid.header{
+  background-color:#E7F2F8;
+}
+
+/* Programmes Container */
+.container-fluid.programmes{
+  background-color: #EFE7BC;
+}
+
+/* Experiments Container */
+.container-fluid.experiments{
+  background-color: #FFE2E8;
+}
+
+/* Prices Container */
+.container-fluid.webDesigns{
+  background-color: #B6E5D8;
+}
+  
+
+
+
+  /* Button to view project */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a.btn {
+    text-decoration: none;
+    background: #FFA384;
+    color: rgb(255,250,250);
+    padding: 10px 20px;
+    border: 1px solid #FFA384;
+    border-radius: 25px;
+  }
+  
+  a.btn:hover {
+    text-decoration: none;
+    background: rgb(255,250,250);
+    color: #FFA384;
+    padding: 10px 20px;
+    border: 1px solid #FFA384;
+    border-radius: 25px;
+  }
