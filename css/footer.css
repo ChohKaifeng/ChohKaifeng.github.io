@@ -1,49 +1,18 @@
-html {
-  scroll-behavior: smooth;
-}
-
 /* Entire footer */
 .jumbotron-fluid {
-  background-color: black;
-  padding: 16px;
-  font-family: 'Chivo', sans-serif;
-}
-
-/* First Row */
-.mainbody {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.mainbody,
-.mainbody a {
-  font-size: 12px;
-  color: white;
+  background-color: #FBF6F3;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
   font-weight: bold;
 }
+.jumbotron-fluid h6{
+  font-size: 14px;
+}
 
-a:hover {
+.jumbotron-fluid a{
+  color: black;
+}
+
+.jumbotron-fluid a:hover {
   text-decoration: none;
-}
-
-/* Last Row */
-.lastrow {
-  padding-top: 10px;
-  border-top: 1px solid white;
-}
-
-span,
-h6 {
-  padding-top: 7px;
-  font-size: 10px;
-}
-
-span {
-  color: white;
-  float: right;
-}
-
-h6 {
-  margin: 0;
-  text-align: center;
 }

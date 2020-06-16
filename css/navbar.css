@@ -1,12 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
   border-bottom: 1px solid rgb(220, 220, 220);
   background-color: white;
 }
 
 .nav-link, .nav-link:hover  {
-  font-family: "Chivo", sans-serif;
   font-weight: bold;
-  font-size: 14px;
   color: #1d1d1e;
 }
 
