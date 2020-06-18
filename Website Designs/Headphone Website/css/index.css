@@ -27,6 +27,12 @@ nav,footer {
   font-size: 18px;
 }
 
+nav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
+}
+
 nav a, nav a:hover {
   color: #1a1110;
   position: relative;
