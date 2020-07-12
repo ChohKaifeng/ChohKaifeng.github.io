@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
 nav {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
