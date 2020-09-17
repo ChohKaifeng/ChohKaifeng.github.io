@@ -1,9 +1,11 @@
 /* Entire footer */
 .jumbotron-fluid {
-  background-color: #FBF6F3;
+  background-color: #f6f5f0;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
   font-weight: bold;
+  border-top: 1px solid rgb(220, 220, 220);
+
 }
 .jumbotron-fluid h6{
   font-size: 14px;

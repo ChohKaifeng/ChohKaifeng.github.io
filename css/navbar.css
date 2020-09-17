@@ -3,9 +3,8 @@ html {
 }
 
 header{
-  position: fixed;
+  position: top;
   top: 0;
-  z-index: 1;
   width:100%;
 }
 
@@ -13,7 +12,7 @@ nav {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
   border-bottom: 1px solid rgb(220, 220, 220);
-  background-color: white;
+  background-color: #f6f5f0;
 }
 
 .nav-link, .nav-link:hover  {
@@ -29,7 +28,7 @@ nav {
   display: block;
   height: 2px;
   left: 50%;
-  background: #d4af37;
+  background: #c39e9e;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
